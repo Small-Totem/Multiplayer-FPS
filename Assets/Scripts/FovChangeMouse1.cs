@@ -1,6 +1,5 @@
 using Photon.Pun;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityStandardAssets.CrossPlatformInput;
 using System.Collections;
 

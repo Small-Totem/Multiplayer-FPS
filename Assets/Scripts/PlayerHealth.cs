@@ -41,7 +41,7 @@ public class PlayerHealth : MonoBehaviourPunCallbacks, IPunObservable {
     private IKControl ikControl;
     private Slider healthSlider;
     private Image damageImage;
-    private int currentHealth;
+    public int currentHealth;
     private bool isDead;
     private bool isSinking;
     private bool damaged;
