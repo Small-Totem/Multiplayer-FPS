@@ -101,6 +101,18 @@ public class PlayerHealth : MonoBehaviourPunCallbacks, IPunObservable {
         playerAudio.Play();
     }
 
+    //命脉技能 瞬间回血
+    [PunRPC]
+    public void Cure(int amount) {
+        if (photonView.IsMine) {
+            currentHealth += amount;
+            if(currentHealth>100){
+                currentHealth=100;
+            }
+            healthSlider.value = currentHealth;
+        }
+    }
+
     /// <summary>
     /// RPC function to declare death of player.
     /// </summary>
@@ -113,7 +125,7 @@ public class PlayerHealth : MonoBehaviourPunCallbacks, IPunObservable {
         if (photonView.IsMine) {
             fpController.enabled = false;
             animator.SetTrigger("IsDead");
-            AddMessageEvent(PhotonNetwork.LocalPlayer.NickName + " was killed by " + enemyName + "!");
+            AddMessageEvent(enemyName + "打爆了" + PhotonNetwork.LocalPlayer.NickName + "!");
             RespawnEvent(respawnTime);
             StartCoroutine("DestoryPlayer", respawnTime);
         }
@@ -155,5 +167,4 @@ public class PlayerHealth : MonoBehaviourPunCallbacks, IPunObservable {
             currentHealth = (int)stream.ReceiveNext();
         }
     }
-
 }

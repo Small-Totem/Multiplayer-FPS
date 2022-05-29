@@ -46,7 +46,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks {
         }
         PhotonNetwork.AutomaticallySyncScene = true;
         PhotonNetwork.ConnectUsingSettings();
-        connectionText.text = "Connecting to lobby...";
+        connectionText.text = "正在连接...";
     }
 
     /// <summary>
@@ -88,7 +88,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks {
     /// </summary>
     public void JoinRoom() {
         serverWindow.SetActive(false);
-        connectionText.text = "Joining room...";
+        connectionText.text = "正在加入房间...";
         PhotonNetwork.LocalPlayer.NickName = username.text;
         PlayerPrefs.SetString(nickNamePrefKey, username.text);
         RoomOptions roomOptions = new RoomOptions() {
@@ -138,9 +138,9 @@ public class NetworkManager : MonoBehaviourPunCallbacks {
         playerHealth.AddMessageEvent += AddMessage;
         sceneCamera.enabled = false;
         if (spawnTime == 0) {
-            AddMessage("Player " + PhotonNetwork.LocalPlayer.NickName + " Joined Game.");
+            AddMessage(PhotonNetwork.LocalPlayer.NickName + " 进房间了.");
         } else {
-            AddMessage("Player " + PhotonNetwork.LocalPlayer.NickName + " Respawned.");
+            AddMessage(PhotonNetwork.LocalPlayer.NickName + " 重生了.");
         }
     }
 
@@ -148,7 +148,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks {
     /// Add message to message panel.
     /// </summary>
     /// <param name="message">The message that we want to add.</param>
-    void AddMessage(string message) {
+    public void AddMessage(string message) {
         photonView.RPC("AddMessage_RPC", RpcTarget.All, message);
     }
 
@@ -173,7 +173,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks {
     /// </summary>
     public override void OnPlayerLeftRoom(Player other) {
         if (PhotonNetwork.IsMasterClient) {
-            AddMessage("Player " + other.NickName + " Left Game.");
+            AddMessage(other.NickName + " 润了.");
         }
     }
 

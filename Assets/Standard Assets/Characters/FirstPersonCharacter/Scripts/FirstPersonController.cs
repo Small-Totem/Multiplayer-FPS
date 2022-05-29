@@ -42,6 +42,34 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private bool m_Jumping;
         private AudioSource m_AudioSource;
 
+        private float m_WalkSpeed_backup=-1f;
+        private float m_RunSpeed_backup=-1f;
+        private float m_JumpSpeed_backup=-1f;
+
+        public void ResetSpeed(){//zjh_2022.5.25
+            if(m_WalkSpeed_backup!=-1f){//以m_WalkSpeed_backup是不是-1判断是否备份过速度
+                m_WalkSpeed=m_WalkSpeed_backup;
+                m_RunSpeed=m_RunSpeed_backup;
+                m_JumpSpeed=m_JumpSpeed_backup;
+            }
+        }
+        public void SetSpeed(float walk,float run,float jump){//zjh_2022.5.25
+            if(m_WalkSpeed_backup==-1f){
+                m_WalkSpeed_backup=m_WalkSpeed;
+                m_RunSpeed_backup=m_RunSpeed;
+                m_JumpSpeed_backup=m_JumpSpeed;
+            }
+            
+            if(walk!=-1){
+                m_WalkSpeed=walk;
+            }
+            if(run!=-1){
+                m_RunSpeed=run;
+            }
+            if(jump!=-1){
+                m_JumpSpeed=jump;
+            }
+        }
         // Use this for initialization
         private void Start()
         {
