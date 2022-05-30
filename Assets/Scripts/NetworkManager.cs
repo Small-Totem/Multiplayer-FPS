@@ -19,6 +19,8 @@ public class NetworkManager : MonoBehaviourPunCallbacks {
     private GameObject serverWindow;
     [SerializeField]
     private GameObject messageWindow;
+
+    public GameObject heroWindow;//hero ui
     [SerializeField]
     private GameObject sightImage;
     [SerializeField]
@@ -34,6 +36,8 @@ public class NetworkManager : MonoBehaviourPunCallbacks {
     private Queue<string> messages;
     private const int messageCount = 10;
     private string nickNamePrefKey = "PlayerName";
+
+    public int playerIndex =-1;
 
     /// <summary>
     /// Start is called on the frame when a script is enabled just before
@@ -106,7 +110,41 @@ public class NetworkManager : MonoBehaviourPunCallbacks {
     /// Callback function on joined room.
     /// </summary>
     public override void OnJoinedRoom() {
+        heroWindow.SetActive(true);
         connectionText.text = "";
+        //Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.visible = false;
+        //Respawn(0.0f);
+    }
+
+    public void button1()
+    {
+        playerIndex=0;
+        heroWindow.SetActive(false);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        Respawn(0.0f);
+    }
+    public void button2()
+    {
+        playerIndex=1;
+        heroWindow.SetActive(false);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        Respawn(0.0f);
+    }
+    public void button3()
+    {
+        playerIndex=2;
+        heroWindow.SetActive(false);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        Respawn(0.0f);
+    }
+    public void button4()
+    {
+        playerIndex=3;
+        heroWindow.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         Respawn(0.0f);
@@ -130,7 +168,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks {
         yield return new WaitForSeconds(spawnTime);
         messageWindow.SetActive(true);
         sightImage.SetActive(true);
-        int playerIndex = Random.Range(0, playerModel.Length);
+        //int playerIndex = Random.Range(0, playerModel.Length);
         int spawnIndex = Random.Range(0, spawnPoints.Length);
         player = PhotonNetwork.Instantiate(playerModel[playerIndex].name, spawnPoints[spawnIndex].position, spawnPoints[spawnIndex].rotation, 0);
         PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
