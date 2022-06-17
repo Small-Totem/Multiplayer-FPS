@@ -15,6 +15,7 @@ public class PlayerSkill_lifeline : MonoBehaviourPunCallbacks
     private float nextInvalidTime;//技能结束的时间
     private PlayerHealth playerHealth;
     private Slider skillChargeSlider;
+    public AudioClip skillSoundClip;
 
     void Start()
     {
@@ -27,6 +28,7 @@ public class PlayerSkill_lifeline : MonoBehaviourPunCallbacks
     {
         //Debug.Log("skill()");
         skillChargeSlider.value=0;
+        AudioSource.PlayClipAtPoint(skillSoundClip,transform.position);
         playerHealth.Cure(cureAmount);
     }
 

@@ -17,18 +17,21 @@ public class PlayerSkill_niuzi : MonoBehaviourPunCallbacks
     FirstPersonController controller;
     private Slider skillChargeSlider;
     private float targetFOV=-1f;
+    public AudioClip skillSoundClip;
 
     void Start()
     {
         controller = GetComponent<FirstPersonController>();
         skillChargeSlider = GameObject.FindGameObjectWithTag("SkillChargeSlider").GetComponent<Slider>();
         skillChargeSlider.value=100;
+        
     }
 
     private void skill()
     {
         //Debug.Log("skill()");
         skillChargeSlider.value=0;
+        AudioSource.PlayClipAtPoint(skillSoundClip,transform.position);
         controller.SetSpeed(8,14,17);//controller.SetSpeed(8,14,-1);   
         //controller.SetSpeed(12,20,-1);    
         smoothFOVChangeTo(80);

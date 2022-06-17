@@ -22,6 +22,7 @@ public class PlayerSkill_dog : MonoBehaviourPunCallbacks
     private Slider skillChargeSlider;
     private SkinnedMeshRenderer[] _renderer;
     private Material[] backups;
+    public AudioClip skillSoundClip;
 
 
     void Start()
@@ -34,6 +35,8 @@ public class PlayerSkill_dog : MonoBehaviourPunCallbacks
     {
         //Debug.Log("skill()");
         //targets=GameObject.FindGameObjectWithTag("DogSkillShaderTarget").GetComponent<SkinnedMeshRenderer>();
+        AudioSource.PlayClipAtPoint(skillSoundClip,transform.position);
+        
         Material cubeMat= new Material(Shader.Find("Custom/XRay"));//load shader
         cubeMat.color=new Color(1, 0, 0, 1);//设置颜色,r g b a 注意的rgb的数值范围是0->1
         cubeMat.renderQueue=2001;//渲染队列，越大越后渲染

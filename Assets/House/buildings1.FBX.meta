@@ -1,0 +1,399 @@
+fileFormatVersion: 2
+guid: e40604a3414dece4aa3696e8d309b20a
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: building_b
+  - first:
+      1: 100002
+    second: building_c
+  - first:
+      1: 100004
+    second: //RootNode
+  - first:
+      1: 100006
+    second: concrete
+  - first:
+      1: 100008
+    second: concrete 1
+  - first:
+      1: 100010
+    second: concrete 2
+  - first:
+      1: 100012
+    second: facade_a
+  - first:
+      1: 100014
+    second: iron_column_a
+  - first:
+      1: 100016
+    second: metal
+  - first:
+      1: 100018
+    second: metal 1
+  - first:
+      1: 100020
+    second: metal 2
+  - first:
+      1: 100022
+    second: metal 3
+  - first:
+      1: 100024
+    second: metal 4
+  - first:
+      1: 100026
+    second: metal 5
+  - first:
+      1: 100028
+    second: old_roof_a
+  - first:
+      1: 100030
+    second: rusted_beam_a
+  - first:
+      1: 100032
+    second: sill_medium
+  - first:
+      1: 100034
+    second: sill_medium_b
+  - first:
+      1: 100036
+    second: sill_small
+  - first:
+      1: 100038
+    second: window_small_b
+  - first:
+      1: 100040
+    second: window_small_c
+  - first:
+      1: 100042
+    second: wood
+  - first:
+      1: 100044
+    second: wood 1
+  - first:
+      1: 100046
+    second: wood 2
+  - first:
+      1: 100048
+    second: wood 3
+  - first:
+      4: 400000
+    second: building_b
+  - first:
+      4: 400002
+    second: building_c
+  - first:
+      4: 400004
+    second: //RootNode
+  - first:
+      4: 400006
+    second: concrete
+  - first:
+      4: 400008
+    second: concrete 1
+  - first:
+      4: 400010
+    second: concrete 2
+  - first:
+      4: 400012
+    second: facade_a
+  - first:
+      4: 400014
+    second: iron_column_a
+  - first:
+      4: 400016
+    second: metal
+  - first:
+      4: 400018
+    second: metal 1
+  - first:
+      4: 400020
+    second: metal 2
+  - first:
+      4: 400022
+    second: metal 3
+  - first:
+      4: 400024
+    second: metal 4
+  - first:
+      4: 400026
+    second: metal 5
+  - first:
+      4: 400028
+    second: old_roof_a
+  - first:
+      4: 400030
+    second: rusted_beam_a
+  - first:
+      4: 400032
+    second: sill_medium
+  - first:
+      4: 400034
+    second: sill_medium_b
+  - first:
+      4: 400036
+    second: sill_small
+  - first:
+      4: 400038
+    second: window_small_b
+  - first:
+      4: 400040
+    second: window_small_c
+  - first:
+      4: 400042
+    second: wood
+  - first:
+      4: 400044
+    second: wood 1
+  - first:
+      4: 400046
+    second: wood 2
+  - first:
+      4: 400048
+    second: wood 3
+  - first:
+      23: 2300000
+    second: concrete
+  - first:
+      23: 2300002
+    second: concrete 1
+  - first:
+      23: 2300004
+    second: concrete 2
+  - first:
+      23: 2300006
+    second: iron_column_a
+  - first:
+      23: 2300008
+    second: metal
+  - first:
+      23: 2300010
+    second: metal 1
+  - first:
+      23: 2300012
+    second: metal 2
+  - first:
+      23: 2300014
+    second: metal 3
+  - first:
+      23: 2300016
+    second: metal 4
+  - first:
+      23: 2300018
+    second: metal 5
+  - first:
+      23: 2300020
+    second: rusted_beam_a
+  - first:
+      23: 2300022
+    second: sill_medium_b
+  - first:
+      23: 2300024
+    second: wood
+  - first:
+      23: 2300026
+    second: wood 1
+  - first:
+      23: 2300028
+    second: wood 2
+  - first:
+      23: 2300030
+    second: wood 3
+  - first:
+      33: 3300000
+    second: concrete
+  - first:
+      33: 3300002
+    second: concrete 1
+  - first:
+      33: 3300004
+    second: concrete 2
+  - first:
+      33: 3300006
+    second: iron_column_a
+  - first:
+      33: 3300008
+    second: metal
+  - first:
+      33: 3300010
+    second: metal 1
+  - first:
+      33: 3300012
+    second: metal 2
+  - first:
+      33: 3300014
+    second: metal 3
+  - first:
+      33: 3300016
+    second: metal 4
+  - first:
+      33: 3300018
+    second: metal 5
+  - first:
+      33: 3300020
+    second: rusted_beam_a
+  - first:
+      33: 3300022
+    second: sill_medium_b
+  - first:
+      33: 3300024
+    second: wood
+  - first:
+      33: 3300026
+    second: wood 1
+  - first:
+      33: 3300028
+    second: wood 2
+  - first:
+      33: 3300030
+    second: wood 3
+  - first:
+      43: 4300000
+    second: concrete
+  - first:
+      43: 4300002
+    second: metal
+  - first:
+      43: 4300004
+    second: wood
+  - first:
+      43: 4300006
+    second: rusted_beam_a
+  - first:
+      43: 4300008
+    second: sill_medium_b
+  - first:
+      43: 4300010
+    second: metal
+  - first:
+      43: 4300012
+    second: wood
+  - first:
+      43: 4300014
+    second: concrete
+  - first:
+      43: 4300016
+    second: metal
+  - first:
+      43: 4300018
+    second: concrete
+  - first:
+      43: 4300020
+    second: metal
+  - first:
+      43: 4300022
+    second: iron_column_a
+  - first:
+      43: 4300024
+    second: metal
+  - first:
+      43: 4300026
+    second: wood
+  - first:
+      43: 4300028
+    second: metal
+  - first:
+      43: 4300030
+    second: wood
+  - first:
+      95: 9500000
+    second: //RootNode
+  externalObjects: {}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    fileIdsGeneration: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 0
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 0.01
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

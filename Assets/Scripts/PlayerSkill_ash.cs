@@ -15,6 +15,7 @@ public class PlayerSkill_ash : MonoBehaviourPunCallbacks
     private float nextInvalidTime;//技能结束的时间
     FirstPersonController controller;
     private Slider skillChargeSlider;
+    public AudioClip skillSoundClip;
 
     void Start()
     {
@@ -26,8 +27,9 @@ public class PlayerSkill_ash : MonoBehaviourPunCallbacks
     private void skill()
     {
         //Debug.Log("skill()");
+        AudioSource.PlayClipAtPoint(skillSoundClip,transform.position);
         skillChargeSlider.value=0;
-        controller.SetSpeed(200,200,-1);    
+        controller.SetSpeed(250,250,-1);    
         //Debug.Log(skillChargeSlider.value);
     }
 

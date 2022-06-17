@@ -19,7 +19,6 @@
 [Bb]uild/
 [Bb]uilds/
 Assets/AssetStoreTools*
-Logs/
 
 # Visual Studio cache directory
 .vs/
